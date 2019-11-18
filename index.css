@@ -1,0 +1,10 @@
+.home-links{
+  text-align: right;
+}
+
+.background-photo{
+  background-image: url(https://via.placeholder.com/600x100);
+  background-position-y: center;
+  background-size: cover;
+  margin-top:50px;
+}
