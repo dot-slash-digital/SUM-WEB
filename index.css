@@ -1,8 +1,4 @@
 /* Navbar */
-#navbar > div {
-    
-}
-
 #navbar img {
     height: 64px;
 }
@@ -17,18 +13,46 @@
     font-size: 18px;
 }
 
-
-
-
-
-
-
+/* Jumbotron */
 #jumbotron {
-    background-image: url(https://via.placeholder.com/600x100);
-    background-position-y: center;
+    height: 600px;
+    background-image: url(https://images.unsplash.com/photo-1519756301029-33fef7098ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=100);
+    background-position: center center;
     background-size: cover;
-    margin-top: 50px;
 }
+
+#jumbotron > .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-right: 50%;
+}
+
+#jumbotron h1 {
+    font-size: 3rem;
+}
+
+#jumbotron p {
+    margin-bottom: 25px;
+}
+
+#jumbotron button {
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #000;
+    background-color: #5ce045;
+    border-color: #4bbb38;
+}
+
+#jumbotron button:hover {
+    background-color: #52cb3c;
+}
+
+
+
+
+
+
+
 
 #about {
     margin-top: 50px;
