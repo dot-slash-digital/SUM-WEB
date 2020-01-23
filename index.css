@@ -1,3 +1,7 @@
+.clear {
+    clear: both;
+}
+
 /* Navbar */
 #navbar img {
     height: 64px;
@@ -47,8 +51,29 @@
     background-color: #52cb3c;
 }
 
+/* Footer */
+#footer {
+    background-color: #f5f5f5;
+}
 
+#footer > .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
+#footer > .container > .left {
+    float: left;
+    text-align: left;
+}
+
+#footer > .container > .right {
+    float: right;
+    text-align: right;
+}
+
+#footer p {
+    margin: 2.5px 0;
+}
 
 
 
@@ -76,12 +101,6 @@
     content: "";
     display: table;
     clear: both;
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
 }
 
 input[type=text], select, textarea {
