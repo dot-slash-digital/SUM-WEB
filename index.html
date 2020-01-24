@@ -80,6 +80,7 @@
                     <h2 class="services-section">Service 6</h2>
                     <p class="services-section">Some text..</p>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
         <div id="testimonials">
@@ -97,21 +98,33 @@
                     <h2 class="services-section">Testimonial 3</h2>
                     <p class="services-section">Some text..</p>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
         <div id="contact">
-            <h1 class="services-section">Contact Us</h1>
             <div class="container">
-                <form action="action_page.php">
-                    <label for="fname">Full Name</label>
-                    <input type="text" id="fname" name="fulltname" placeholder="Your name..">
-                    <label for="pnum">Phone Number</label>
-                    <input type="text" id="pnum" name="phonenumber" placeholder="Your phone number..">
-                    <label for="email">Email Address</label>
-                    <input type="text" id="email" name="email" placeholder="Your email..">
-                    <label for="subject">Project Description</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    <input type="submit" value="Submit">
+                <h1>Contact Us</h1>
+                <p>description description description description description description</p>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label>Project Description</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
             </div>
         </div>

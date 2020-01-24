@@ -51,6 +51,21 @@
     background-color: #52cb3c;
 }
 
+/* Contact */
+#contact {
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
+#contact p {
+    margin-bottom: 40px;
+}
+
+#contact h1,
+#contact p {
+    text-align: center;
+}
+
 /* Footer */
 #footer {
     background-color: #f5f5f5;
@@ -85,44 +100,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#services h1 {
-    text-align: center;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
 }
