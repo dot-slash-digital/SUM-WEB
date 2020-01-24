@@ -1,8 +1,17 @@
+#about,
+#services,
+#testimonials,
+#contact {
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
 .clear {
     clear: both;
 }
 
 /* Navbar */
+
 #navbar img {
     height: 64px;
 }
@@ -18,8 +27,8 @@
 }
 
 /* Jumbotron */
+
 #jumbotron {
-    height: 600px;
     background-image: url(https://images.unsplash.com/photo-1519756301029-33fef7098ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=100);
     background-position: center center;
     background-size: cover;
@@ -51,11 +60,17 @@
     background-color: #52cb3c;
 }
 
-/* Contact */
-#contact {
-    margin-top: 160px;
-    margin-bottom: 100px;
+/* About */
+
+#about p {
+    margin: 0;
 }
+
+#about img {
+    width: 100%;
+}
+
+/* Contact */
 
 #contact p {
     margin-bottom: 40px;
@@ -67,6 +82,7 @@
 }
 
 /* Footer */
+
 #footer {
     background-color: #f5f5f5;
 }
@@ -88,16 +104,4 @@
 
 #footer p {
     margin: 2.5px 0;
-}
-
-
-
-
-
-#about {
-    margin-top: 50px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
