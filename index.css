@@ -6,6 +6,17 @@
     margin-bottom: 100px;
 }
 
+#services h1,
+#contact h1,
+#contact p {
+    text-align: center;
+}
+
+#services h1,
+#testimonials h1 {
+    margin-bottom: 40px;
+}
+
 .clear {
     clear: both;
 }
@@ -62,6 +73,10 @@
 
 /* About */
 
+#about h1 {
+    margin-bottom: 15px;
+}
+
 #about p {
     margin: 0;
 }
@@ -70,15 +85,25 @@
     width: 100%;
 }
 
+/* Services */
+
+#services .col-6 {
+    text-align: center;
+}
+
+#services h3 {
+    margin: 8px 0;
+}
+
+#services p {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
 /* Contact */
 
 #contact p {
     margin-bottom: 40px;
-}
-
-#contact h1,
-#contact p {
-    text-align: center;
 }
 
 /* Footer */
