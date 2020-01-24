@@ -2,11 +2,12 @@
 #services,
 #testimonials,
 #contact {
-    margin-top: 160px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 
 #services h1,
+#testimonials,
 #contact h1,
 #contact p {
     text-align: center;
@@ -89,6 +90,8 @@
 
 #services .col-6 {
     text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #services h3 {
@@ -100,10 +103,22 @@
     font-size: 14px;
 }
 
+/* Testimonials */
+
+#testimonials .col {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 /* Contact */
 
 #contact p {
     margin-bottom: 40px;
+}
+
+#contact > .container {
+    width: 70%;
 }
 
 /* Footer */
