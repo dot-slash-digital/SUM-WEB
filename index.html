@@ -127,26 +127,29 @@
             <div class="container">
                 <h1>Contact Us</h1>
                 <p>description description description description description description</p>
-                <form>
+                <form action="https://formspree.io/ivymmoore@gmail.com" method="POST">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label>Full Name</label>
-                            <input type="text" class="form-control" placeholder="">
+                            <input type="text" class="form-control" name="name" placeholder="Full name">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="">
+                            <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
                         </div>
                     </div>
                     <div class="mb-3">
                         <label>Email Address</label>
-                        <input type="email" class="form-control" placeholder="">
+                        <input type="email" class="form-control"name="_replyto" placeholder="Your email">
                     </div>
                     <div class="mb-3">
                         <label>Project Description</label>
-                        <textarea class="form-control" rows="5"></textarea>
+                        <textarea class="form-control" name="message" placeholder="Your message" rows="5"></textarea>
                     </div>
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <div>
+                      <input type="submit" value="Send">
+                      <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
