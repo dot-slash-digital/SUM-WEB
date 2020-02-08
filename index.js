@@ -1,14 +1,10 @@
-// Enable scrollspy
-$('body').scrollspy({target: "#navbar", offset: 300});
-
 // Smooth scrolling for navbar links
 $("nav a").on('click', function(e) {
     e.preventDefault();
     var hash = this.hash;
-    console.log($("#navbar").height(), hash);
 
     $('html, body').animate({
-        scrollTop: ($(hash).offset().top - $("#navbar").height())
+        scrollTop: ($(hash).offset().top)
     }, 800, function() {
         window.location.hash = hash;
     });
