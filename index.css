@@ -25,13 +25,13 @@
     padding-right: 25px;
     color: #000;
     background-color: #5ce045;
-    border-color: #4bbb38;
+    border: 2px solid #4bbb38;
 }
 
 #jumbotron button:hover,
 #call-to-action button:hover,
 #contact button:hover {
-    background-color: #52cb3c;
+    background-color: #4bbb38;
 }
 
 .dark-bg {
@@ -180,6 +180,27 @@
 
 #contact > .container {
     width: 70%;
+}
+
+#contact-submit,
+#contact-submit.disabled {
+    transition: 0.5s all;
+}
+
+#contact-submit.disabled {
+    cursor: not-allowed;
+    background-color: grey;
+    border: 2px solid grey;
+}
+
+#contact-submit.disabled:hover {
+    background-color: #7c7c7c;
+}
+
+#contact-submit.disabled:focus {
+    outline: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 /* Footer */
