@@ -64,12 +64,18 @@
     font-size: 18px;
     text-decoration: none;
     color: #f8f9fa;
-    margin: 1.5rem;
+    margin: 0 1.5rem;
     transition: 0.3s all;
 }
 
+#navbar nav a.active,
 #navbar nav a:hover {
     color: #52cb3c !important;
+}
+
+.nav-link {
+    float: left;
+    padding: 0;
 }
 
 /* Jumbotron */

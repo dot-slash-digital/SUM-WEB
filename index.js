@@ -1,3 +1,7 @@
+  
+// Enable scrollspy
+$('body').scrollspy({target: "#navbar-scrollspy", offset: 98});
+
 // Smooth scrolling for navbar links
 $("nav a").on('click', function(e) {
     e.preventDefault();
