@@ -1,17 +1,16 @@
   
 // Enable scrollspy
-$('body').scrollspy({target: "#navbar-scrollspy", offset: 98});
+$('body').scrollspy({target: "#navbar-scrollspy", offset: 97});
 
 // Smooth scrolling for navbar links
 $("nav a").on('click', function(e) {
     e.preventDefault();
-    var hash = this.hash;
-
+    
+    $("nav a").css("transition", "0 all");
+    
     $('html, body').animate({
-        scrollTop: ($(hash).offset().top)
-    }, 800, function() {
-        window.location.hash = hash;
-    });
+        scrollTop: ($(this.hash).offset().top - $("#navbar").height() - 32)
+    }, 800);
 });
 
 // Submission and input validation
