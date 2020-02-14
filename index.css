@@ -52,13 +52,13 @@
 }
 
 #navbar img {
-    height: 64px;
+    height: 70px;
 }
 
 #navbar nav {
     float: right;
-    padding-top: 18.5px;
-    padding-bottom: 18.5px;
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
 }
 
 #navbar nav a {

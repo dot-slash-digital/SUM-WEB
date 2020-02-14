@@ -1,12 +1,10 @@
   
 // Enable scrollspy
-$('body').scrollspy({target: "#navbar-scrollspy", offset: 97});
+$('body').scrollspy({target: "#navbar-scrollspy", offset: 103});
 
 // Smooth scrolling for navbar links
-$("nav a").on('click', function(e) {
+$("#navbar a, #jumbotron a").on('click', function(e) {
     e.preventDefault();
-    
-    $("nav a").css("transition", "0 all");
     
     $('html, body').animate({
         scrollTop: ($(this.hash).offset().top - $("#navbar").height() - 32)
@@ -22,6 +20,15 @@ $("form").submit(function() {
     } else {
         $("#contact-full-name").removeClass("is-invalid");
         $("#contact-full-name").addClass("is-valid");
+    }
+    
+    // Company Name (required)
+    if ($("#contact-company-name").val() == "") {
+        $("#contact-company-name").removeClass("is-valid");
+        $("#contact-company-name").addClass("is-invalid");
+    } else {
+        $("#contact-company-name").removeClass("is-invalid");
+        $("#contact-company-name").addClass("is-valid");
     }
     
     // Phone Number (required)
@@ -52,6 +59,7 @@ $("form").submit(function() {
     }
     
     if ($("#contact-full-name").val() != "" &&
+        $("#contact-company-name").val() != "" &&
         $("#contact-phone-number").val().replace(/\D/g,'').length == 10 &&
         $("#contact-email-address").val() != "" &&
         $("#contact-project-description").val() != "")
@@ -79,6 +87,7 @@ $(document).ready(function() {
 $(".form-control").keyup(function() {
     // When all required fields are valid
     if ($("#contact-full-name").val() != "" &&
+        $("#contact-company-name").val() != "" &&
         $("#contact-phone-number").val().replace(/\D/g,'').length == 10 &&
         $("#contact-email-address").val() != "" &&
         $("#contact-project-description").val() != "")
