@@ -25,7 +25,6 @@
             </div>
         </div>
         <div id="jumbotron-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            
             <ol class="carousel-indicators">
                 <li data-target="#jumbotron-carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#jumbotron-carousel" data-slide-to="1"></li>
@@ -111,39 +110,39 @@
             <div class="container">
                 <h1>Services</h1>
                 <div class="row">
-                    <div class="col-6 col-sm-4">
+                    <div class="col-6 col-sm-4" data-toggle="modal" data-target="#modal-sitework">
                         <div>
-                            <img src="images/sitework.jpg">
+                            <div class="service-img"></div>
                             <h3>Sitework</h3>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div class="col-6 col-sm-4" data-toggle="modal" data-target="#modal-utilities">
                         <div>
-                            <img src="images/utilities.jpg">
+                            <div class="service-img"></div>
                             <h3>Utilities</h3>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div class="col-6 col-sm-4" data-toggle="modal" data-target="#modal-storm-drain">
                         <div>
-                            <img src="images/storm-drain.jpg">
+                            <div class="service-img"></div>
                             <h3>Storm Drain &amp; Detention Systems</h3>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div class="col-6 col-sm-4" data-toggle="modal" data-target="#modal-demolition">
                         <div>
-                            <img src="images/demolition.jpg">
+                            <div class="service-img"></div>
                             <h3>Demolition</h3>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div class="col-6 col-sm-4" data-toggle="modal" data-target="#modal-concrete">
                         <div>
-                            <img src="images/concrete.jpg">
+                            <div class="service-img"></div>
                             <h3>Concrete</h3>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4">
+                    <div class="col-6 col-sm-4" data-toggle="modal" data-target="#modal-project-reclamation">
                         <div>
-                            <img src="images/project-reclamation.jpg">
+                            <div class="service-img"></div>
                             <h3>Project Reclamation</h3>
                         </div>
                     </div>
@@ -215,6 +214,103 @@
                     <p class="text-light"><a href="mailto:info@summexllc.com">info@summexllc.com</a></p>
                 </div>
                 <div class="clear"></div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modal-sitework" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sitework</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/modal-sitework.jpg">
+                        <p>Erosion Controls &mdash; Storm Water Management &mdash; Site Clearing &mdash; Mass Excavation &mdash; Import / Export Materials &mdash; Trucking / Transportation &mdash; Sub-Grade Finishing &mdash; Finish Grading &mdash; Aggregate Placement Concrete / Paving &mdash; Final Site Grading Pre-Landscaping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-utilities" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Utilities</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/modal-utilities.jpg">
+                        <p>Water Mains &mdash; Water Meter Vaults &mdash; Water Backflow Prevention &mdash; Underground Fire Lines &amp; Connections &mdash; Fire Hydrants &mdash; Domestic Water Services &mdash; Wet Taps for Pressurized Connections &mdash; Sewer Mains &mdash; Pre-Cast / Fiberglass Structures &mdash; Lift Stations &mdash; Structure Boring &amp; Connections &mdash; Domestic / Commercial Laterals &mdash; Clean Out Connections</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-storm-drain" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Storm Drain &amp; Detention Systems</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/modal-storm-drain.jpg">
+                        <p>Detention Basins &mdash; Retention Ponds &mdash; Pre-Cast / Fiberglass Structures &mdash; RCP Pipe Placement &mdash; HDPE Pipe Placement Culvert Installation &mdash; Earth &amp; Concrete Water Diversion Systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-demolition" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Demolition</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/modal-demolition.jpg">
+                        <p>Pavement Removal &amp; Disposal &mdash; Concrete Removal &amp; Disposal &mdash; Tree Removal &amp; Disposal Building / Structure Removal &amp; Disposal &mdash; Utility Abandonment Site Clean Up</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-concrete" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Concrete</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/modal-concrete.jpg">
+                        <p>Concrete Paving &mdash; Curb &amp; Gutter &mdash; Valley Pans / Drain Channels &mdash;  ADA Ramps &mdash;  Light Poles &mdash; Sidewalks Approaches / Entrances &mdash; Cast-in-Place Drainage Structures &mdash; Trash Pads / Receptacles Enclosures &mdash; Foundations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-project-reclamation" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Project Reclamation</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/modal-project-reclamation.jpg">
+                        <p>Project Finish-Ups &mdash; Emergency Restoration &amp; Repairs &mdash; Rigid Pricing to Complete Projects &mdash; Performance / Schedule Management</p>
+                    </div>
+                </div>
             </div>
         </div>
         
