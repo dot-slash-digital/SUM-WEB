@@ -18,7 +18,7 @@
     margin-bottom: 40px;
 }
 
-#jumbotron button,
+#jumbotron-carousel button,
 #call-to-action button,
 #contact button {
     padding-left: 25px;
@@ -28,7 +28,7 @@
     border: 2px solid #4bbb38;
 }
 
-#jumbotron button:hover,
+#jumbotron-carousel button:hover,
 #call-to-action button:hover,
 #contact button:hover {
     background-color: #4bbb38;
@@ -46,6 +46,7 @@
 
 #navbar {
     position: fixed;
+    top: 0;
     z-index: 100;
     width: 100%;
     border-bottom: 1px solid #434646;
@@ -79,27 +80,71 @@
     padding: 0;
 }
 
+.nav-link:last-child {
+    margin-right: 0 !important;
+}
+
 /* Jumbotron */
 
-#jumbotron {
-    background-image: url(https://images.unsplash.com/photo-1519756301029-33fef7098ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=100);
+#jumbotron-carousel {
+    margin-top: 103px;
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url(images/carousel-1.jpg);
     background-position: center center;
     background-size: cover;
-    padding-top: 98px;
+}
+.carousel-item:nth-child(2) {
+    background-image: url(images/carousel-2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.carousel-item:nth-child(3) {
+    background-image: url(images/carousel-3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.carousel-item:nth-child(4) {
+    background-image: url(images/carousel-4.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 
-#jumbotron > .container {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-right: 50%;
+.carousel-item > .outer-container {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
-#jumbotron h1 {
-    font-size: 3rem;
+.carousel-item > .outer-container > .vertical-align {
+    display: table-cell;
+    vertical-align: middle;
 }
 
-#jumbotron p {
-    margin-bottom: 25px;
+.carousel-item > .outer-container > .vertical-align > .container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#jumbotron-carousel .container {
+    color: white;
+}
+
+#jumbotron-carousel h1 {
+    font-size: 80px;
+}
+
+#jumbotron-carousel p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 /* About */

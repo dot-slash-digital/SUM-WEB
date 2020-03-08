@@ -1,4 +1,3 @@
-  
 // Enable scrollspy
 $('body').scrollspy({target: "#navbar-scrollspy", offset: 103});
 
