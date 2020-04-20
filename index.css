@@ -146,7 +146,6 @@
       font-size: 10px;
       margin-bottom: 30px;
   }
-
 }
 
 @media screen and (min-width: 551px) {
@@ -157,7 +156,6 @@
       font-size: 20px;
       margin-bottom: 30px;
   }
-
 }
 
 
@@ -296,20 +294,35 @@
 
 /* Footer */
 
+
+@media screen and (max-width: 406px) {
+  #footer > .container > .left {
+      float: center;
+      text-align: center;
+  }
+  #footer > .container > .right {
+      float: center;
+      text-align: center;
+  }
+}
+
+@media screen and (min-width: 407px) {
+  #footer > .container > .left {
+      float: left;
+      text-align: left;
+  }
+
+  #footer > .container > .right {
+      float: right;
+      text-align: right;
+  }
+}
+
 #footer > .container {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-#footer > .container > .left {
-    float: left;
-    text-align: left;
-}
-
-#footer > .container > .right {
-    float: right;
-    text-align: right;
-}
 
 #footer p {
     margin: 2.5px 0;
