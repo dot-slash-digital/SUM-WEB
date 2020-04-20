@@ -138,14 +138,29 @@
     color: white;
 }
 
-#jumbotron-carousel h1 {
-    font-size: 80px;
+@media screen and (max-width: 550px) {
+  #jumbotron-carousel h1 {
+      font-size: 50px;
+  }
+  #jumbotron-carousel p {
+      font-size: 10px;
+      margin-bottom: 30px;
+  }
+
 }
 
-#jumbotron-carousel p {
-    font-size: 20px;
-    margin-bottom: 30px;
+@media screen and (min-width: 551px) {
+  #jumbotron-carousel h1 {
+      font-size: 80px;
+  }
+  #jumbotron-carousel p {
+      font-size: 20px;
+      margin-bottom: 30px;
+  }
+
 }
+
+
 
 /* About */
 
