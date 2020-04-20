@@ -162,8 +162,36 @@
 
 /* About */
 
-#about h1 {
-    margin-bottom: 15px;
+@media screen and (max-width: 768px) {
+  #about h1 {
+      margin-bottom: 15px;
+      text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #about h1 {
+      margin-bottom: 15px;
+  }
+}
+
+.image2{
+   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .image1{
+    display: none;
+  }
+
+  .image1col{
+    display: none;
+  }
+
+  .image2{
+    padding-top: 10px;
+    display: block;
+  }
 }
 
 #about p {
