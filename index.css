@@ -204,6 +204,61 @@
 
 /* Call-to-Action */
 
+@media screen and (min-width: 1201px){
+  #call-to-action .a{
+    float: right;
+  }
+  .text-light{
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .text-light{
+      width: 80%;
+      padding-right: 25px;
+  }
+  .link-action{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #call-to-action .container{
+    display: table;
+  }
+  .btn-act{  
+    width: 125% !important;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .text-light{
+    width: 60%;
+    font-size: 1.75rem;
+    padding-right: 10px;
+  }
+  .link-action{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .text-light{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  #call-to-action .container{
+    text-align: center;
+  }
+
+  #call-to-action .a{
+    float: center;
+  }
+}
+
 #call-to-action {
     padding: 50px;
 }
