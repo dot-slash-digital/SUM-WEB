@@ -143,7 +143,7 @@
       font-size: 50px;
   }
   #jumbotron-carousel p {
-      font-size: 10px;
+      font-size: 16px;
       margin-bottom: 30px;
   }
 }
@@ -214,7 +214,7 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 991px) {
-  .text-light{
+  #call-to-action .text-light{
       width: 80%;
       padding-right: 25px;
   }
@@ -225,25 +225,25 @@
   #call-to-action .container{
     display: table;
   }
-  .btn-act{  
+  .btn-act{
     width: 125% !important;
   }
 }
 
 @media screen and (max-width: 992px) and (min-width: 767px) {
-  .text-light{
+  #call-to-action .text-light{
     width: 60%;
     font-size: 1.75rem;
     padding-right: 10px;
   }
-  .link-action{
+  #call-to-action .link-action{
     display: table-cell;
     vertical-align: middle;
   }
 }
 
 @media screen and (max-width: 766px) {
-  .text-light{
+  #call-to-action .text-light{
     width: 100%;
     font-size: 1.5rem;
     padding: 50px;
@@ -332,6 +332,8 @@
   }
   #testimonials .row {
     display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
