@@ -199,7 +199,7 @@
 }
 
 #about img {
-    width: 100%;
+    width: 500px;
 }
 
 /* Call-to-Action */
@@ -296,27 +296,27 @@
     background-size: cover;
 }
 
-#services .col-6:nth-child(1) .service-img {
+#services #sitework .service-img {
     background-image: url(images/sitework.jpg);
 }
 
-#services .col-6:nth-child(2) .service-img {
+#services #utilities .service-img {
     background-image: url(images/utilities.jpg);
 }
 
-#services .col-6:nth-child(3) .service-img {
-    background-image: url(images/storm-drain.jpg);
+#services #drainage-systems .service-img {
+    background-image: url(images/drainage-systems.jpg);
 }
 
-#services .col-6:nth-child(4) .service-img {
+#services #demolition .service-img {
     background-image: url(images/demolition.jpg);
 }
 
-#services .col-6:nth-child(5) .service-img {
+#services #concrete .service-img {
     background-image: url(images/concrete.jpg);
 }
 
-#services .col-6:nth-child(6) .service-img {
+#services #project-reclamation .service-img {
     background-image: url(images/project-reclamation.jpg);
 }
 
