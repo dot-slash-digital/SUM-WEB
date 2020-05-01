@@ -44,6 +44,36 @@
 
 /* Navbar */
 
+@media screen and (min-width: 992px) {
+  .navbar-toggler{
+    background-color: white;
+    border: 1px solid grey;
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+  }
+  #navbar nav {
+      float: right;
+      padding-top: 21.5px;
+      padding-bottom: 21.5px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .collasped{
+    margin-top: 20px;
+  }
+  .navbar-toggler {
+    background-color: white;
+    border: 1px solid grey;
+    margin-left: 20px;
+    display: flex;
+  }
+ #navbar-scrollspy{
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+
 #navbar {
     position: fixed;
     top: 0;
@@ -56,11 +86,6 @@
     height: 70px;
 }
 
-#navbar nav {
-    float: right;
-    padding-top: 21.5px;
-    padding-bottom: 21.5px;
-}
 
 #navbar nav a {
     font-size: 18px;
@@ -73,14 +98,6 @@
 #navbar nav a.active,
 #navbar nav a:hover {
     color: #52cb3c !important;
-}
-
-.navbar-toggler{
-  background-color: white;
-  border: 1px solid grey;
-  position: absolute;
-  right: 0;
-  margin-right: 25px;
 }
 
 .nav-link {
