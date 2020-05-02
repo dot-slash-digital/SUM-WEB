@@ -44,7 +44,7 @@
 
 /* Navbar */
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar-toggler{
     background-color: white;
     border: 1px solid grey;
@@ -78,7 +78,7 @@
     margin-right: 0!important;
   }
 }
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .collasped{
     margin-top: 20px;
   }
@@ -191,7 +191,7 @@
     color: white;
 }
 
-@media screen and (max-width: 550px) {
+@media (max-width: 550px) {
   #jumbotron-carousel h1 {
       font-size: 50px;
   }
@@ -201,7 +201,7 @@
   }
 }
 
-@media screen and (min-width: 551px) {
+@media (min-width: 551px) {
   #jumbotron-carousel h1 {
       font-size: 80px;
   }
@@ -211,37 +211,49 @@
   }
 }
 
-
+@media (max-width: 991px) {
+    #jumbotron-carousel p {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* About */
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   #about h1 {
       margin-bottom: 15px;
       text-align: center;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   #about h1 {
       margin-bottom: 15px;
   }
 }
 
-.image2{
+.image2 {
    display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .image1{
+@media (min-width: 769px) and (max-width: 991px) {
+    #about .image1 {
+        width: 325px;
+    }
+}
+
+@media (max-width: 768px) {
+  #about .image1 {
     display: none;
   }
 
-  .image1col{
+  .image1col {
     display: none;
   }
 
-  .image2{
+  .image2 {
     padding-top: 10px;
     display: block;
   }
@@ -257,7 +269,7 @@
 
 /* Call-to-Action */
 
-@media screen and (min-width: 1201px){
+@media (min-width: 1201px){
   #call-to-action .a{
     float: right;
   }
@@ -266,7 +278,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 991px) {
+@media (max-width: 1200px) and (min-width: 991px) {
   #call-to-action .text-light{
       width: 80%;
       padding-right: 25px;
@@ -283,7 +295,7 @@
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 767px) {
+@media (max-width: 992px) and (min-width: 767px) {
   #call-to-action .text-light{
     width: 60%;
     font-size: 1.75rem;
@@ -295,7 +307,7 @@
   }
 }
 
-@media screen and (max-width: 766px) {
+@media (max-width: 766px) {
   #call-to-action .text-light{
     width: 100%;
     font-size: 1.5rem;
@@ -319,7 +331,7 @@
 /* Services */
 
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   #services .service-img {
       width: 300px;
       height: 300px;
@@ -342,7 +354,7 @@
   }
 
 }
-@media screen and (max-width: 1199px) and (min-width: 992px) {
+@media (max-width: 1199px) and (min-width: 992px) {
   #services .service-img {
       width: 100%;
       height: 200px;
@@ -362,7 +374,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   #services .service-img {
       width: 100%;
       height: 200px;
@@ -389,7 +401,7 @@
   }
 }
 
-@media screen and (max-width: 550px){
+@media (max-width: 550px){
   #services .service-img {
       width: 100%;
       height: 200px;
@@ -452,7 +464,7 @@
 
 /* Testimonials */
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   #testimonials .col {
     margin-bottom: 30px;
     padding: 30px;
@@ -467,7 +479,7 @@
   }
 }
 
-@media screen and (min-width: 993px) {
+@media (min-width: 993px) {
   #testimonials .col {
       margin: 30px;
       padding: 30px;
@@ -493,14 +505,15 @@
 }
 
 /* Contact */
-@media screen and (max-width: 400px) {
+
+@media (max-width: 400px) {
   #contact .container{
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 401px) {
+@media (min-width: 401px) {
   #contact > .container {
       width: 70%;
   }
@@ -535,27 +548,23 @@
 /* Footer */
 
 
-@media screen and (max-width: 406px) {
-  #footer > .container > .left {
-      float: center;
-      text-align: center;
-  }
-  #footer > .container > .right {
-      float: center;
-      text-align: center;
-  }
+@media (max-width: 424px) {
+    #footer > .container > .left,
+    #footer > .container > .right {
+        text-align: center;
+    }
 }
 
-@media screen and (min-width: 407px) {
-  #footer > .container > .left {
-      float: left;
-      text-align: left;
-  }
+@media (min-width: 425px) {
+    #footer > .container > .left {
+        float: left;
+        text-align: left;
+    }
 
-  #footer > .container > .right {
-      float: right;
-      text-align: right;
-  }
+    #footer > .container > .right {
+        float: right;
+        text-align: right;
+    }
 }
 
 #footer > .container {
