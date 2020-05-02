@@ -6,7 +6,7 @@ $("#navbar a, #jumbotron a").on('click', function(e) {
     e.preventDefault();
     
     $('html, body').animate({
-        scrollTop: ($(this.hash).offset().top - $("#navbar").height() - 32)
+        scrollTop: ($(this.hash).offset().top - $("#navbar").height())
     }, 800);
 });
 

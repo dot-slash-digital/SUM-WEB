@@ -44,88 +44,29 @@
 
 /* Navbar */
 
-@media (min-width: 992px) {
-  .navbar-toggler{
-    background-color: white;
-    border: 1px solid grey;
-    position: absolute;
-    right: 0;
-    margin-right: 25px;
-  }
-  #navbar nav {
-      float: right;
-      padding-top: 21.5px;
-      padding-bottom: 21.5px;
-  }
-  #navbar nav a {
-      font-size: 18px;
-      text-decoration: none;
-      color: #f8f9fa;
-      margin: 0 1.5rem;
-      transition: 0.3s all;
-  }
-  .nav-link {
-      float: right;
-      padding: 0;
-  }
-  #navbar-scrollspy{
-     padding-top: 10px;
-     width: 100%;
-     padding-bottom: 15px;
-   }
-   .mr-auto {
-    margin-left: auto!important;
-    margin-right: 0!important;
-  }
-}
-@media (max-width: 991px) {
-  .collasped{
-    margin-top: 20px;
-  }
-  /* .navbar-toggler {
-    background-color: white;
-    border: 1px solid grey;
-    margin-left: 20px;
-    display: flex;
-  } */
-  .navbar-collapse {
-    padding: 25px;
-  }
-  .navbar-toggler{
-    background-color: white;
-    border: 1px solid grey;
-    position: absolute;
-    right: 0;
-    margin-right: 25px;
-  }
- #navbar-scrollspy{
-    padding-top: 10px;
-    width: 100%;
-  }
-  #navbar nav a {
-      font-size: 18px;
-      text-decoration: none;
-      color: #f8f9fa;
-      text-align: center;
-      margin: 0 1.5rem;
-      transition: 0.3s all;
-  }
-  .nav-link {
-      padding: 0;
-  }
-
-}
-
 #navbar {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
     border-bottom: 1px solid #434646;
+}
+
+#navbar nav {
+    padding: 1rem;
+}
+
+.navbar-nav {
+    margin: 0 0 0 auto;
 }
 
 #navbar img {
     height: 70px;
+}
+
+#navbar div a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #f8f9fa;
+    margin: 0 1.5rem;
+    transition: 0.3s all;
+    text-align: right;
 }
 
 #navbar nav a.active,
@@ -133,8 +74,28 @@
     color: #52cb3c !important;
 }
 
-.nav-link:last-child {
+.nav-item .nav-link {
     margin-right: 0 !important;
+}
+
+.nav-item:last-child .nav-link,
+.nav-item:last-child .nav-link a {
+    padding-right: 0 !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #navbar nav {
+        padding: 1.3rem;
+    }
+    
+    #navbar nav div a {
+        font-size: 16px;
+        margin: 0 0.75rem;
+    }
+    
+    #navbar img {
+        height: 60px;
+    }
 }
 
 /* Jumbotron */
