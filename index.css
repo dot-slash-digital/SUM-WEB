@@ -113,16 +113,19 @@
     background-position: center center;
     background-size: cover;
 }
+
 .carousel-item:nth-child(2) {
     background-image: url(images/carousel-2.jpg);
     background-position: center center;
     background-size: cover;
 }
+
 .carousel-item:nth-child(3) {
     background-image: url(images/carousel-3.jpg);
     background-position: center center;
     background-size: cover;
 }
+
 .carousel-item:nth-child(4) {
     background-image: url(images/carousel-4.jpg);
     background-position: center center;
@@ -322,23 +325,29 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  #services .service-img {
-      width: 100%;
-      height: 200px;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  #services .col-6 > div {
-      cursor: pointer;
-      padding: 30px;
-      background-color: #dbdbdb;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-      transition: 0.3s all;
-  }
-  .col-services{
-    padding-top: 30px;
-  }
+    #services .service-img {
+        width: 100%;
+        height: 200px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #services .col-6 > div {
+        cursor: pointer;
+        padding: 30px;
+        background-color: #dbdbdb;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        transition: 0.3s all;
+    }
+
+    .col-services {
+        padding-top: 30px;
+    }
+
+    #services .col-6 h3 {
+        font-size: 1.6rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -440,16 +449,16 @@
     background-image: url(images/utilities.jpg);
 }
 
-#services #drainage-systems .service-img {
-    background-image: url(images/drainage-systems.jpg);
-}
-
 #services #demolition .service-img {
     background-image: url(images/demolition.jpg);
 }
 
 #services #concrete .service-img {
     background-image: url(images/concrete.jpg);
+}
+
+#services #drainage-systems .service-img {
+    background-image: url(images/drainage-systems.jpg);
 }
 
 #services #project-reclamation .service-img {
@@ -507,6 +516,7 @@
     padding-right: 15px;
   }
 }
+
 @media (min-width: 401px) {
   #contact > .container {
       width: 70%;
@@ -516,7 +526,6 @@
 #contact p {
     margin-bottom: 40px;
 }
-
 
 #contact-submit,
 #contact-submit.disabled {
@@ -541,7 +550,6 @@
 
 /* Footer */
 
-
 @media (max-width: 424px) {
     #footer > .container > .left,
     #footer > .container > .right {
@@ -565,7 +573,6 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
 
 #footer p {
     margin: 2.5px 0;
