@@ -4,10 +4,14 @@ $('body').scrollspy({target: "#navbar-scrollspy", offset: 103});
 // Smooth scrolling for navbar links
 $("#navbar a, #jumbotron a").on('click', function(e) {
     e.preventDefault();
-    
+
     $('html, body').animate({
         scrollTop: ($(this.hash).offset().top - $("#navbar").height())
     }, 800);
+});
+
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
 });
 
 // Submission and input validation
@@ -20,7 +24,7 @@ $("form").submit(function() {
         $("#contact-full-name").removeClass("is-invalid");
         $("#contact-full-name").addClass("is-valid");
     }
-    
+
     // Company Name (required)
     if ($("#contact-company-name").val() == "") {
         $("#contact-company-name").removeClass("is-valid");
@@ -29,7 +33,7 @@ $("form").submit(function() {
         $("#contact-company-name").removeClass("is-invalid");
         $("#contact-company-name").addClass("is-valid");
     }
-    
+
     // Phone Number (required)
     if ($("#contact-phone-number").val().replace(/\D/g,'').length != 10) {
         $("#contact-phone-number").removeClass("is-valid");
@@ -38,7 +42,7 @@ $("form").submit(function() {
         $("#contact-phone-number").removeClass("is-invalid");
         $("#contact-phone-number").addClass("is-valid");
     }
-    
+
     // Email Address (required)
     if ($("#contact-email-address").val() == "") {
         $("#contact-email-address").removeClass("is-valid");
@@ -47,7 +51,7 @@ $("form").submit(function() {
         $("#contact-email-address").removeClass("is-invalid");
         $("#contact-email-address").addClass("is-valid");
     }
-    
+
     // Project Description (required)
     if ($("#contact-project-description").val() == "") {
         $("#contact-project-description").removeClass("is-valid");
@@ -56,7 +60,7 @@ $("form").submit(function() {
         $("#contact-project-description").removeClass("is-invalid");
         $("#contact-project-description").addClass("is-valid");
     }
-    
+
     if ($("#contact-full-name").val() != "" &&
         $("#contact-company-name").val() != "" &&
         $("#contact-phone-number").val().replace(/\D/g,'').length == 10 &&
