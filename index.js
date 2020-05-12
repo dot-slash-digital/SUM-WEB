@@ -2,7 +2,7 @@
 $('body').scrollspy({target: "#navbar-scrollspy", offset: 103});
 
 // Smooth scrolling for navbar links
-$("#navbar a, #jumbotron a").on('click', function(e) {
+$("#navbar a, #jumbotron a, #jumbotron-carousel a").on('click', function(e) {
     e.preventDefault();
 
     $('html, body').animate({
