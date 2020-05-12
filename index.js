@@ -4,9 +4,13 @@ $('body').scrollspy({target: "#navbar-scrollspy", offset: 103});
 // Smooth scrolling for navbar links
 $("#navbar a, #jumbotron a, #jumbotron-carousel a").on('click', function(e) {
     e.preventDefault();
+    
+    var navbarHeight = $("#mobile-nav").hasClass("show")
+        ? ($("#navbar").height() - $("#mobile-nav").height())
+        : $("#navbar").height();
 
     $('html, body').animate({
-        scrollTop: ($(this.hash).offset().top - $("#navbar").height())
+        scrollTop: ($(this.hash).offset().top - navbarHeight)
     }, 800);
 });
 
