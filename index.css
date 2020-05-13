@@ -507,6 +507,7 @@
 
 @media (min-width: 993px) {
   #testimonials .col {
+      height: fit-content;
       margin: 30px;
       padding: 30px;
       background-color: #676c6c;
