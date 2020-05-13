@@ -87,12 +87,12 @@
     #navbar nav {
         padding: 1.3rem;
     }
-    
+
     #navbar nav div a {
         font-size: 16px;
         margin: 0 0.75rem;
     }
-    
+
     #navbar img {
         height: 60px;
     }
@@ -184,6 +184,19 @@
 }
 
 /* About */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 992px) and (max-width: 1200px)  {
+    #about .col{
+      display: flex;
+    }
+    #about h1 {
+      display: table-caption;
+    }
+    #about p {
+      display: table-footer-group;
+      padding-top: 55px;
+    }
+
+}
 
 @media (max-width: 768px) {
   #about h1 {
@@ -255,7 +268,7 @@
     #call-to-action h1 {
         width: 500px;
     }
-    
+
     #call-to-action a {
         margin: 23px 0;
     }
@@ -266,7 +279,7 @@
         font-size: 2rem;
         width: 400px;
     }
-    
+
     #call-to-action a {
         margin: 13px 0;
     }
@@ -276,11 +289,11 @@
     #call-to-action {
         text-align: center;
     }
-    
+
     #call-to-action h1 {
         margin-bottom: 25px;
     }
-    
+
     #call-to-action a {
         float: none;
     }
@@ -400,7 +413,7 @@
     .services-inside{
         padding: 10px;
     }
-    
+
     #services .col-6 > div {
         cursor: pointer;
         padding: 10px;
@@ -408,17 +421,17 @@
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
         transition: 0.3s all;
     }
-    
+
     #services .col-6:nth-child(1),
     #services .col-6:nth-child(3),
     #services .col-6:nth-child(5) {
-        padding: 7.5px 7.5px 7.5px 15px; 
+        padding: 7.5px 7.5px 7.5px 15px;
     }
-    
+
     #services .col-6:nth-child(2),
     #services .col-6:nth-child(4),
     #services .col-6:nth-child(6) {
-        padding: 7.5px 15px 7.5px 7.5px; 
+        padding: 7.5px 15px 7.5px 7.5px;
     }
 }
 
@@ -426,7 +439,7 @@
     #services .service-img {
         height: 150px;
     }
-    
+
     #services h3 {
         font-size: 1.25rem;
     }
