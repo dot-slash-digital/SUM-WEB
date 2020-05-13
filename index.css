@@ -184,6 +184,19 @@
 }
 
 /* About */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 992px) and (max-width: 1200px)  {
+    #about .col{
+      display: flex;
+    }
+    #about h1 {
+      display: table-caption;
+    }
+    #about p {
+      display: table-footer-group;
+      padding-top: 55px;
+    }
+
+}
 
 @media (max-width: 768px) {
   #about h1 {
@@ -299,6 +312,16 @@
 }
 
 /* Services */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 974px)  {
+  .IE-compatibility{
+    max-height: 400px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 973px)  {
+  .IE-compatibility{
+    max-height: 300px;
+  }
+}
 
 @media (min-width: 1200px) {
   #services .service-img {
@@ -484,6 +507,7 @@
 
 @media (min-width: 993px) {
   #testimonials .col {
+      height: fit-content;
       margin: 30px;
       padding: 30px;
       background-color: #676c6c;
